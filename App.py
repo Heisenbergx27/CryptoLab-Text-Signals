@@ -83,7 +83,7 @@ if submit:
 
     # Headline (with "Margine" in Italian)
     headline = (
-        f"Nuovo Ordine a Mercato — {symbol} {direction} {entry_fmt}  -  Margine {margin_pct:.0f}%\n"
+        f"Entriamo ora a Mercato - {symbol} {direction} {entry_fmt}  -  Margine {margin_pct:.0f}%\n"
         f"🟥SL {sl_fmt}  -  🟩TP1 {tp1_fmt}  •  🟩TP2 {tp2_fmt}  •  🟩TP3 {tp3_fmt}"
     )
 
@@ -118,4 +118,5 @@ if submit:
 
     st.divider()
     st.caption("You can edit the fields above and click **Generate Text** again to recalculate.")
+
 
