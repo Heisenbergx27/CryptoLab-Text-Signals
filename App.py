@@ -100,15 +100,18 @@ if submit:
 
     st.markdown(f"**Additional info:** {extra_info}")
 
-    # Quick copies for TP/SL updates
-    st.markdown("**TP/SL Updates (click Copy to copy):**")
+    # Quick copies for TP/SL/BE updates
+    st.markdown("**TP/SL/BE Updates (click Copy to copy):**")
     col_a, col_b = st.columns(2)
     with col_a:
-        st.code(f"✅ Take Profit 1 raggiunto a {tp1_fmt}", language="markdown")
-        st.code(f"✅ Take Profit 2 raggiunto a {tp2_fmt}", language="markdown")
+        st.code(f"✅ Take Profit 1 preso a {tp1_fmt}", language="markdown")
+        st.code(f"✅ Take Profit 2 preso a {tp2_fmt}", language="markdown")
     with col_b:
-        st.code(f"✅ Take Profit 3 raggiunto a {tp3_fmt}", language="markdown")
+        st.code(f"✅ Take Profit 3 preso a {tp3_fmt}", language="markdown")
         st.code(f"❌ Stop Loss preso a {sl_fmt}", language="markdown")
+
+    # Break Even line (separate)
+    st.code(f"🟦 Break Even preso a {entry_fmt}", language="markdown")
 
     # Download text file
     full_txt = headline + "\n\n" + extra_info
